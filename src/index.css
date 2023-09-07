@@ -175,7 +175,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width:1100px ) {
+@media (min-width:768px ) {
   .welcome{
     flex-direction: column-reverse;
   }
@@ -225,5 +225,85 @@ body {
   }
   .logged__content-input button{
     margin-top: 7px;
+  }
+}
+@media screen and (min-width: 365px){
+  .welcome{
+    flex-direction: column-reverse;
+  }
+  .welcome__content{
+    margin-top: 15vh;
+  }
+  .welcome__content-header h1{
+    font-size: 96px;
+  }
+  .welcome__content-header h3{
+    font-size: 48px;
+  }
+  .welcome__content-cta button{
+    font-size: 40px;
+    font-family: Poppins;
+    padding: 10px 30px;
+    border-radius: 50px;
+    margin-left: 15vw;
+    margin-top: 30px;
+  }
+  .welcome__anyma{
+    width: 900px;
+    height: 900px;
+  }
+  .logged__content-nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logged__content-nav h2{
+    font-size: 52px;
+    text-align: center;
+  }
+  .logged__content-nav button{
+    margin-top: -53px;
+    height: 64px;
+    width: 200px;
+    font-size: 34px;
+  }
+  .logged__container-main{
+    margin-top: 10px;
+    width: 80vw;
+    height: 72.5vh;
+  }
+  .logged__container-main img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    margin: 20px;
+  }
+  .logged__container-main_thread-text {
+    font-size: 48px;
+    text-align: flex-start;
+    
+  
+  }
+  .logged__content-input{
+    padding-top: 10px;
+    padding-bottom: 1vh;
+    
+  }
+  .logged__content-input input{
+    margin-top: 8px;
+    margin-bottom: 5px;
+    width: 80vw;
+    height: 80px;
+  }
+  .logged__content-input button{
+    margin-top: 7px;
+    height: 80px;
+    width: 80px;
+    border: none;
+  }
+  .logged__content-input_img{
+    width: 80px;
+    height: 80px;
+
   }
 }
