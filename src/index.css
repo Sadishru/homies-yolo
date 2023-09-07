@@ -1,0 +1,229 @@
+html, body, #root {
+  padding: 0;
+  margin: 0;
+
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.welcome__anyma{
+  margin-left: -30px;
+  height: 650px;
+  width: 650px;
+}
+/* font-family: 'Poppins', sans-serif; */
+
+.welcome__content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+
+}
+.welcome__content-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -30px;
+  margin-left: -20px;
+}
+.welcome__content-header h1 {
+  font-family: Full-House20;
+  font-size: 46px;
+}
+.welcome__content-header h3 {
+  font-family: Poppins;
+  font-size: 20px;
+  margin-top: -14px;
+}
+.welcome__content-cta button{
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  background-color: #57375D;
+  color: white;
+  cursor: pointer;
+
+  margin-left: 100px;
+}
+.welcome__content-cta button:hover {
+  background-color: #2977e6;
+}
+
+.logged {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  background-image: url('/bg.png') ;
+  
+}
+.logged__content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logged__content-nav {
+  display: flex;
+  flex-direction: row;
+  
+  gap: 50px;
+}
+.logged__content-nav h2{
+  font-family: Poppins ;
+  font-style: italic;
+  text-decoration: overline;
+  text-decoration-color: #57375D;
+  text-shadow: 5px 5px 10px #57375D;
+}
+.logged__content-nav button {
+  color: white;
+  background: #57375D;
+  border: none;
+  outline: none;
+  padding: 0px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+
+  height: 34px;
+  margin-top: 23px;
+  margin-left: -20px;
+  
+  font-family: Poppins;
+  
+}
+.logged__content-nav button:hover {
+  background-color: black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logged__container-main {
+  backdrop-filter: blur(1rem);
+  padding: 20px;
+  width: 60vw;
+  height: 70vh;
+
+  overflow-y: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.logged__container-main::-webkit-scrollbar{
+  display: none;
+} 
+
+.logged__container-main_thread{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 10px;
+  padding: 5px auto;
+
+}
+
+.logged__container-main_thread img {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.logged__container-main_thread-text {
+  font-family: Poppins;
+
+}
+.logged__content-input {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.logged__content-input input{
+  background: transparent;
+  backdrop-filter: blur(10rem);
+  border: 1px solid #57375D;
+  border-radius: 10px;
+  width: 30vw;
+  height: 35px;
+  outline: none;
+  color: white;
+  font-family: Poppins;
+  font-size: 16px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+}
+
+.logged__content-input button {
+  height: 40px;
+  background: transparent;
+  backdrop-filter: blur(1rem);
+  border: 1px solid black;
+  border-radius: 10px;
+  outline: none;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+@media (max-width:700px ) {
+  .welcome{
+    flex-direction: column-reverse;
+  }
+  .welcome__content{
+    margin-top: 80px;
+  }
+  .welcome__content-header h1{
+    font-size: 30px;
+  }
+  .welcome__content-header h3{
+    font-size: 15px;
+  }
+  .welcome__content-cta button{
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+  .welcome__anyma{
+    width: 350px;
+    height: 350px;
+  }
+  .logged__content-nav{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .logged__content-nav h2{
+    font-size: 18px;
+    text-align: center;
+  }
+  .logged__content-nav button{
+    margin-top: -53px;
+    
+  }
+  .logged__container-main{
+    margin-top: 10px;
+    width: 75vw;
+    height: 68.7vh;
+  }
+  .logged__content-input{
+    padding-top: 10px;
+    padding-bottom: 1vh;
+  }
+  .logged__content-input input{
+    margin-top: 8px;
+    margin-bottom: 0px;
+    width: 70vw;
+  }
+  .logged__content-input button{
+    margin-top: 7px;
+  }
+}
