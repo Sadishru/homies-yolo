@@ -307,7 +307,7 @@ body {
 
   }
 }
-@media (min-width:1280 ) {
+@media (min-width:1160 ) {
   .welcome {
     display: flex;
     flex-direction: row;
