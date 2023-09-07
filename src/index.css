@@ -175,7 +175,7 @@ body {
   cursor: pointer;
 }
 
-@media (max-width:700px ) {
+@media (max-width:1080px ) {
   .welcome{
     flex-direction: column-reverse;
   }
